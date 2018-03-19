@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Edit to push to Heroku
+gem 'execjs'
+
 group :development do
 	gem 'sqlite3'
 end
