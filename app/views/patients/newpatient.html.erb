@@ -8,7 +8,7 @@
 			<p1><%= @content %></p1>
 			<h2><%= link_to "About", '/about', :method => :get %></h2>
 		
-			<%= form_for :post do |f| %>
+			<%= form_for :patient, url: patients_path do |f| %>
 				<p>
 					<%= f.label :first_name %>
 					<%= f.text_field :first_name %>
@@ -53,6 +53,12 @@
 				<p>
 					<%= f.label :next_of_kin_address %>
 					<%= f.text_field :next_of_kin_address %>
+				</p>
+				
+				<p>
+					
+					<%= f.submit :'Submit New Patient' %>
+					
 				</p>
 			<% end %>
 		</div>

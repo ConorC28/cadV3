@@ -12,6 +12,10 @@ class PatientsController < ApplicationController
 	
 	end
 	
+	def create
+		render plain: params[:patient].inspect
+	end
+	
 		
 	
 end
