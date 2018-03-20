@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   
   get 'welcome/index'
   
+  get 'newpatient' => 'patients#newpatient'
+  
   resources :patients
   
   root 'welcome#index', as: 'home'

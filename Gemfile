@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'pg'
 gem'rails_12factor'
+# Added to allow datetimepicker
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap-datepicker-rails'
 # __________________________________________________________________________________Edit to push to Heroku
 gem 'execjs'
 
