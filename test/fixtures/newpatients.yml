@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstname: MyText
+  seconmdname: MyText
+  dob: MyText
+  address: MyText
+  phone: MyText
+  illness: MyText
+  medinfo: MyText
+  nextkinfirstname: MyText
+  nextkinsecondname: MyText
+  nextkincontact: MyText
+  nextkinaddress: MyText
+
+two:
+  firstname: MyText
+  seconmdname: MyText
+  dob: MyText
+  address: MyText
+  phone: MyText
+  illness: MyText
+  medinfo: MyText
+  nextkinfirstname: MyText
+  nextkinsecondname: MyText
+  nextkincontact: MyText
+  nextkinaddress: MyText
