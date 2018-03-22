@@ -11,15 +11,15 @@
 			<%= form_for :patient, url: patients_path do |f| %>
 				<p>
 					<%= f.label :first_name %>
-					<%= f.text_field :first_name %>
+					<%= f.text_field :firstname %>
 				</p>
 				<p>
 					<%= f.label :second_name %>
-					<%= f.text_field :second_name %>
+					<%= f.text_field :secondname %>
 				</p>
 				<p>
 					<%= f.label :date_of_birth %>
-					<%= f.text_field :date_of_birth, "data-provide" => 'datepicker' %>
+					<%= f.text_field :dateofbirth, "data-provide" => 'datepicker' %>
 					
 				</p>
 				<p>
@@ -28,7 +28,7 @@
 				</p>
 				<p>
 					<%= f.label :phone_number %>
-					<%= f.text_field :phone_number %>
+					<%= f.text_field :phonenumber %>
 				</p>
 				<p>
 					<%= f.label :illness %>
@@ -36,23 +36,23 @@
 				</p>
 				<p>
 					<%= f.label :relevant_medical_information %>
-					<%= f.text_field :relevant_medical_information %>
+					<%= f.text_field :relevantmedicalinformation %>
 				</p>
 				<p>
 					<%= f.label :next_of_kin_first_name %>
-					<%= f.text_field :next_of_kin_first_name %>
+					<%= f.text_field :nextofkinfirstname %>
 				</p>
 				<p>
-					<%= f.label :next_of_kin_second_name %>
-					<%= f.text_field :next_of_kin_second_name %>
+					<%= f.label :next_of_kin_secondname %>
+					<%= f.text_field :nextofkinsecondname %>
 				</p>
 				<p>
 					<%= f.label :next_of_kin_contact_number %>
-					<%= f.text_field :next_of_kin_contact_number %>
+					<%= f.text_field :nextofkincontactnumber %>
 				</p>
 				<p>
 					<%= f.label :next_of_kin_address %>
-					<%= f.text_field :next_of_kin_address %>
+					<%= f.text_field :nextofkinaddress %>
 				</p>
 				
 				<p>
