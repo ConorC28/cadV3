@@ -1,3 +1,31 @@
-<h1><%= @title %></h1>
-<p1><%= @content %></p1>
-<h2><%= link_to "welcome", '/index', :method => :get %></h2>
+<div class ="container" id = "main">
+	<div class = "row">	
+		<div class="col-lg-12">
+			<div id = "aboutcontent">
+				<h1><%= @title %></h1>
+					<p1>
+						<div id = "bord">
+							<%= image_tag "board.png", alt: "bord_pic", class: "img-responsive"%>
+						</div>
+						<%= @aboutcontent1%>
+					</p1>
+				
+					<p>
+					</p>
+					
+					<p1>
+						<%= @aboutcontent2%>
+					</p1>
+					
+					<p>
+					</p>
+					
+					<p1>
+						<%= @aboutcontent3%>
+					</p1>
+				
+
+			</div>
+		</div>
+	</div>
+</div>

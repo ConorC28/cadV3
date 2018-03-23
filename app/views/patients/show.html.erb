@@ -1,12 +1,21 @@
-<h1>Show</h1>
-<p><%= @patient.firstname %></p>
-<p><%= @patient.secondname %></p>
-<p><%= @patient.dateofbirth %></p>
-<p><%= @patient.address %></p>
-<p><%= @patient.phonenumber %></p>
-<p><%= @patient.illness %></p>
-<p><%= @patient.relevantmedicalinfo %></p>
-<p><%= @patient.nextofkinfirstname %></p>
-<p><%= @patient.nextofkinsecondname %></p>
-<p><%= @patient.nextofkincontactnumber %></p>
-<p><%= @patient.nextofkinaddress %></p>
+<div class = "row">
+	
+		<div class="col-lg-12">
+			<div id ="shownewp">		
+				<h1><%= @title %></h1>
+				<h>Patient ID: <%= @patient.id %></p>
+				<p>First Name: <%= @patient.firstname %></p>
+				<p>Second Name: <%= @patient.secondname %></p>
+				<p>Date of Birth: <%= @patient.dateofbirth %></p>
+				<p>Address: <%= @patient.address %></p>
+				<p>Phone Number: <%= @patient.phonenumber %></p>
+				<p>Illness: <%= @patient.illness %></p>
+				<p>Relevant Medical Information: <%= @patient.relevantmedicalinfo %></p>
+				<p>Next of Kin First Name: <%= @patient.nextofkinfirstname %></p>
+				<p>Next of Kin Second Name: <%= @patient.nextofkinsecondname %></p>
+				<p>Next of Kin Contact Number: <%= @patient.nextofkincontactnumber %></p>
+				<p>Next of Kin Address: <%= @patient.nextofkinaddress %></p>
+				<p>Created: <%= @patient.created_at.strftime("%B %d %Y, %l:%M%P") %></p>
+			<div id ="shownewp">
+		</div>
+</div>

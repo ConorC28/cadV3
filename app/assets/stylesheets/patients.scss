@@ -1,3 +1,96 @@
 // Place all the styles related to the Patients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#ppimg{
+float:left;
+padding-bottom:15PX;
+padding-right:10px;
+}
+#ppimg img{
+box-shadow:0 4px 12px 0 grey;
+border-radius:5px;
+padding-right:10px;
+}
+#ppcontent1{
+font-size:18px;
+text-align:center;
+}
+#pplinks{
+box-shadow:0 4px 12px 0 grey;
+border-radius:5px;
+float:right;
+background-color:#004d00;
+text-decoration:none;
+padding-left:20px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+#links a{
+display:inline-block;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:10px;
+padding-right:10px;
+color:white;
+font-size:15px;
+text-decoration:none;
+}
+#links a:hover:first-child{
+border-radius:10px 0px 0px 10px;
+padding-left:13px;
+padding-right:13px;
+background-color:#00b33c;
+text-decoration:none;
+transition:1s;
+}
+#links a:hover:nth-child(2){
+border-radius:0px 0px 0px 0px;
+padding-left:13px;
+padding-right:13px;
+background-color:#00b33c;
+text-decoration:none;
+transition:1s;
+}
+#links a:active{
+border-radius:0px 0px 0px 0px;
+padding-left:10px;
+padding-right:10px;
+font-size:14px;
+transition:1s;
+
+}
+#links a li{
+text-align:center;
+}
+.row{
+
+}
+
+#npform{
+font-size:18px;
+text-align:center;
+}
+#npfb{
+
+}
+#npfb input{
+box-shadow:0 4px 5px 0 grey;
+border:#004d00;
+border-radius:5px;
+color:white;
+background:#00b33c;
+}
+#npfb input:hover{
+font-size:18.5px;
+transition:1s;
+}
+#npfb input:active{
+box-shadow:0 2px 2px 0 grey;
+font-size:18px;
+transition:1s;
+}
+#pdbcontent{
+font-size:18px;
+text-align:center;
+}

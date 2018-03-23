@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   get 'about' => 'pages#about', as: 'about'
+  
+  get 'imh' => 'pages#imh', as: 'imh'
+  
+  get 'patientdb' => 'patients#patientdb', as: 'patientdb'
 
   get 'index' => 'welcome#index'
    

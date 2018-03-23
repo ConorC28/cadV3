@@ -5,9 +5,28 @@
 		<div class="col-lg-12">
 			
 			<h1><%= @title %></h1>
-			<p1><%= @content %></p1>
-			<h2><%= link_to "About", '/about', :method => :get %></h2>
-			<%= link_to "Add New Patient", newpatient_path %></li>
+			<div id = "pplinks">
+				<div id = "links">
+					<%= link_to "Add New Patient", newpatient_path %></li>
+					<%= link_to "View Patient Database", patientdb_path %></li>
+				</div>
+			</div>
+			<p1>
+				
+				<p1>
+					<div id = "ppimg">
+						<%= image_tag "patients.png", alt: "pat_pic", class: "img-responsive"%>
+					</div>
+					
+				</p1>
+				<div id = "ppcontent1">
+					<%= @patientspagecontent1 %>
+				</div>
+				
+				
+			</p1>
+			
+				
 		</div>
 	</div>
 </div>

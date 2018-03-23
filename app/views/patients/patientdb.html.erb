@@ -1,0 +1,24 @@
+<div class ="container" id = "main">
+	<div class = "row">
+		<div class="col-lg-12">
+			<h1><%= @title %></h1>
+				<div id ="pdbcontent">
+					<p><%= @patientdbcontent1%></p>
+					
+				</div>
+				<% @patients.each do |patient|%>
+					<h3><%= patient.firstname %></h3>
+					<h3><%= patient.secondname %></h3>
+					<h3><%= patient.dateofbirth %></h3>
+					<h3><%= patient.address %></h3>
+					<h3><%= patient.phonenumber %></h3>
+					<h3><%= patient.relevantmedicalinfo %></h3>
+					<h3><%= patient.nextofkinfirstname %></h3>
+					<h3><%= patient.nextofkinsecondname %></h3>
+					<h3><%= patient.nextofkincontactnumber %></h3>
+					<h3><%= patient.nextofkinaddress %></h3>
+					
+				<% end %>
+		</div>
+	</div>
+</div>

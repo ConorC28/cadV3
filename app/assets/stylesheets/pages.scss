@@ -1,3 +1,40 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.row h1{
+padding-top:15px;
+padding-bottom:15px;
+text-align:center;
+border-radius:10px;
+background-color:#66c2ff;
+}
+.row{
+box-shadow:0 4px 8px 3px grey;
+border-radius:15px 15px;
+background-color:#b3e6ff;
+}
+#cent{
+float:right;
+padding-right:10px;
+}
+#bord{
+padding-bottom:10px;
+padding-right:10px;
+float:left;
+}
+#bord img{
+box-shadow:0 4px 5px 2px grey;
+border-radius:5px;
+}
+#aboutcontent{
+font-size:18px;
+text-align:center;
+}
+
+#aboutcontent .h1{
+
+}
+#imhcontent{
+font-size:18px;
+text-align:center;
+}
