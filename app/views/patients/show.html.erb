@@ -1,6 +1,17 @@
-<div class = "row">
-	
+<div class ="container" id = "main">
+	<div class = "row">
+		
 		<div class="col-lg-12">
+			
+			<div id = "pdblistshow">
+				</p>
+				<%= link_to "Back to Database", patientdb_path %></li>
+				</p>
+				<%= link_to "Edit", edit_patient_path(@patient)%></li>
+			</div>
+					
+			
+			
 			<div id ="shownewp">		
 				<h1><%= @title %></h1>
 				<h>Patient ID: <%= @patient.id %></p>
@@ -16,6 +27,11 @@
 				<p>Next of Kin Contact Number: <%= @patient.nextofkincontactnumber %></p>
 				<p>Next of Kin Address: <%= @patient.nextofkinaddress %></p>
 				<p>Created: <%= @patient.created_at.strftime("%B %d %Y, %l:%M%P") %></p>
+				
+				
 			<div id ="shownewp">
+			
+			
 		</div>
+	</div>
 </div>

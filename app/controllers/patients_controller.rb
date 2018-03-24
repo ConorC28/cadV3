@@ -32,6 +32,21 @@ class PatientsController < ApplicationController
 		redirect_to @patient
 	end
 	
+	def edit
+		@title = 'Update Patient Data'
+		@content = 'MEOW'
+		@patient = Patient.find(params[:id])
+	end
+	
+	def update		
+		@patient = Patient.find(params[:id])
+		if(@patient.update(patient_params))
+			redirect_to @patient
+		else
+			render 'edit'
+		end
+	end
+	
 	private def patient_params
 		params.require(:patient).permit(:firstname, :secondname, :dateofbirth, :address, :phonenumber, :illness, :relevantmedicalinfo, :nextofkinfirstname, :nextofkinsecondname, :nextofkincontactnumber, :nextofkinaddress)
 	

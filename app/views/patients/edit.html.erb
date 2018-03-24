@@ -9,7 +9,7 @@
 
 			<div id = "npform">
 																	<!--required field and date picker added-->
-				<%= form_for :patient, url: patients_path do |f| %>
+				<%= form_for :patient, url: patient_path(@patient), method: :patch do |f| %>
 					<p>
 						<div class="col-lg-6 col-md-6 col-sm-6">
 							<%= f.label :first_name %><span id = "field">
@@ -103,7 +103,7 @@
 					
 						<p>
 							<div id = "npfb">		
-							<%= f.submit :'Submit New Patient' %>
+							<%= f.submit :'Update Patient Details' %>
 							</div>	
 						</p>
 					

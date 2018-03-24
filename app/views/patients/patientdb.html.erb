@@ -6,19 +6,22 @@
 					<p><%= @patientdbcontent1%></p>
 					
 				</div>
-				<% @patients.each do |patient|%>
-					<h3><%= patient.firstname %></h3>
-					<h3><%= patient.secondname %></h3>
-					<h3><%= patient.dateofbirth %></h3>
-					<h3><%= patient.address %></h3>
-					<h3><%= patient.phonenumber %></h3>
-					<h3><%= patient.relevantmedicalinfo %></h3>
-					<h3><%= patient.nextofkinfirstname %></h3>
-					<h3><%= patient.nextofkinsecondname %></h3>
-					<h3><%= patient.nextofkincontactnumber %></h3>
-					<h3><%= patient.nextofkinaddress %></h3>
-					
-				<% end %>
+					<div id = "pdblist">
+						<% @patients.each do |patient|%>
+							<h3><%= patient.id %></h3>
+							<h3><%= patient.firstname %></h3>
+							<h3><%= patient.secondname %></h3>
+							<h3><%= patient.dateofbirth %></h3>
+							<h3><%= patient.address %></h3>
+							<h3><%= patient.phonenumber %></h3>
+							<h3><%= patient.relevantmedicalinfo %></h3>
+							<h3><%= patient.nextofkinfirstname %></h3>
+							<h3><%= patient.nextofkinsecondname %></h3>
+							<h3><%= patient.nextofkincontactnumber %></h3>
+							<h3><%= patient.nextofkinaddress %></h3>
+							<%= link_to "View Entry", patient_path(patient) %>
+						<% end %>
+					<div>
 		</div>
 	</div>
 </div>
