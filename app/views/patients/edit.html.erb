@@ -5,8 +5,9 @@
 		<div class="col-lg-12">
 			
 			<h1><%= @title %></h1>
-			<p1><%= @content %></p1>
-
+			<div id = "editcontents">
+				<p1><%= @content %></p1>
+			</div>
 			<div id = "npform">
 																	<!--required field and date picker added-->
 				<%= form_for :patient, url: patient_path(@patient), method: :patch do |f| %>

@@ -8,18 +8,18 @@
 				</div>
 					<div id = "pdblist">
 						<% @patients.each do |patient|%>
-							<h3><%= patient.id %></h3>
-							<h3><%= patient.firstname %></h3>
-							<h3><%= patient.secondname %></h3>
-							<h3><%= patient.dateofbirth %></h3>
-							<h3><%= patient.address %></h3>
-							<h3><%= patient.phonenumber %></h3>
-							<h3><%= patient.relevantmedicalinfo %></h3>
-							<h3><%= patient.nextofkinfirstname %></h3>
-							<h3><%= patient.nextofkinsecondname %></h3>
-							<h3><%= patient.nextofkincontactnumber %></h3>
-							<h3><%= patient.nextofkinaddress %></h3>
-							<%= link_to "View Entry", patient_path(patient) %>
+						<%= link_to "View Entry", patient_path(patient) %>
+							<h3>Patient ID: <%= patient.id %></h3>
+							<h3>Patient First Name: <%= patient.firstname %></h3>
+							<h3>Patient Second Name: <%= patient.secondname %></h3>
+							<h3>Patient Date of Birth: <%= patient.dateofbirth %></h3>
+							<h3>Patient Address: <%= patient.address %></h3>
+							<h3>Phone Numbber: <%= patient.phonenumber %></h3>
+							<h3>Relevant Medical Information: <%= patient.relevantmedicalinfo %></h3>
+							<h3>Next of Kin First Name: <%= patient.nextofkinfirstname %></h3>
+							<h3>Next of Kin second Name: <%= patient.nextofkinsecondname %></h3>
+							<h3>Next of Kin Contact Number: <%= patient.nextofkincontactnumber %></h3>
+							<h3>Next of Kin Address: <%= patient.nextofkinaddress %></h3>
 						<% end %>
 					<div>
 		</div>

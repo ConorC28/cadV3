@@ -26,11 +26,11 @@ padding-right:20px;
 padding-top:10px;
 padding-bottom:10px;
 }
-@media only screen and (max-width: 992px) {
-	#pplinks{
-	float:left;
+	@media only screen and (max-width: 992px) {
+		#pplinks{
+		float:left;
+		}
 	}
-}
 #links a{
 display:inline-block;
 padding-top:5px;
@@ -40,6 +40,7 @@ padding-right:10px;
 color:white;
 font-size:15px;
 text-decoration:none;
+transition:1s;
 }
 #links a:hover:first-child{
 border-radius:10px 0px 0px 10px;
@@ -50,7 +51,7 @@ text-decoration:none;
 transition:1s;
 }
 #links a:hover:nth-child(2){
-border-radius:0px 0px 0px 0px;
+border-radius:0px 10px 10px 0px;
 padding-left:13px;
 padding-right:13px;
 background-color:#00b33c;
@@ -63,21 +64,17 @@ padding-left:10px;
 padding-right:10px;
 font-size:14px;
 transition:1s;
-
 }
 #links a li{
 text-align:center;
 }
-.row{
-
-}
-
 #npform{
 font-size:18px;
 text-align:center;
 }
-#npfb{
-
+#editcontents{
+font-size:18px;
+text-align:center;
 }
 #npfb input{
 box-shadow:0 4px 5px 0 grey;
@@ -85,6 +82,7 @@ border:#004d00;
 border-radius:5px;
 color:white;
 background:#00b33c;
+transition:1s;
 }
 #npfb input:hover{
 font-size:18.5px;
@@ -99,8 +97,24 @@ transition:1s;
 font-size:18px;
 text-align:center;
 }
+#pdblist h3{
+text-align:center;
+text-decoration:none;
+font-size:18px;
+background: #FFF;
+border-radius:5px;
+box-shadow:0 4px 5px 0 grey;
+}
+#pblist a h3{
+background: #CCC;
+}
+#pblist h3:nth-child(odd) {
+background: #FFF;
+}
 #pdblist a{
-font-size:16px;
+text-align:center;
+text-decoration:none;
+font-size:18px;
 padding-bottom:5px;
 padding-top:5px;
 padding-left:5px;
@@ -110,20 +124,38 @@ border:#004d00;
 border-radius:5px;
 color:white;
 background:#00b33c;
+transition:1s;
 }
 #pdblist a:hover{
-font-size:16.5px;
+font-size:18.5px;
 transition:1s;
 }
 #pdblist a:active{
 box-shadow:0 2px 2px 0 grey;
-font-size:16px;
+font-size:18px;
 transition:1s;
 }
 #pdblistshow a{
+padding-top:3px;
+padding-bottom:3px;
+}
+#shownewp h1{
+font-size:18.5px;
+background:#4dff88;
+border-radius:5px;
+box-shadow:0 4px 5px 0 grey;
+}
+#shownewp h3{
+font-size:18px;
+background: #FFF;
+border-radius:5px;
+box-shadow:0 4px 5px 0 grey;
+}
+#pdblistshow a{
+text-decoration:none;
+transition:1s;
 font-size:16px;
-padding-bottom:5px;
-padding-top:5px;
+
 padding-left:5px;
 padding-right:5px;
 box-shadow:0 4px 5px 0 grey;

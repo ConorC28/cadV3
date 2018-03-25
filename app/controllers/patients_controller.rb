@@ -34,7 +34,8 @@ class PatientsController < ApplicationController
 	
 	def edit
 		@title = 'Update Patient Data'
-		@content = 'MEOW'
+		@content = 'Welcome to the patients edit page, please ensure any changes made 
+		to patients details before saving.'
 		@patient = Patient.find(params[:id])
 	end
 	
@@ -46,6 +47,7 @@ class PatientsController < ApplicationController
 			render 'edit'
 		end
 	end
+	
 	
 	private def patient_params
 		params.require(:patient).permit(:firstname, :secondname, :dateofbirth, :address, :phonenumber, :illness, :relevantmedicalinfo, :nextofkinfirstname, :nextofkinsecondname, :nextofkincontactnumber, :nextofkinaddress)

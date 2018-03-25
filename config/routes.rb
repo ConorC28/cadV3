@@ -9,6 +9,8 @@ Rails.application.routes.draw do
    
   get 'patientspage' => 'patients#patientspage', as: 'patientspage'
   
+  
+  
   get 'welcome/index'
   
   get 'newpatient' => 'patients#newpatient'
