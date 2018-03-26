@@ -8,6 +8,13 @@
 				<%= link_to "Back to Database", patientdb_path %></li>
 				</p>
 				<%= link_to "Edit", edit_patient_path(@patient)%></li>
+				</p>
+				<%= button_to "Delete", patient_path(@patient),
+								method: :delete,	
+								data: {confirm: 'Are you sure'} 
+								
+								%></li>
+					
 			</div>
 					
 			

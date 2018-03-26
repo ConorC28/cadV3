@@ -9,7 +9,9 @@
 				<p1><%= @content %></p1>
 			</div>
 			<div id = "npform">
-																	<!--required field and date picker added-->
+								
+								<!--required field and date picker added-->
+								
 				<%= form_for :patient, url: patient_path(@patient), method: :patch do |f| %>
 					<p>
 						<div class="col-lg-6 col-md-6 col-sm-6">
@@ -107,6 +109,8 @@
 							<%= f.submit :'Update Patient Details' %>
 							</div>	
 						</p>
+						
+						
 					
 				</div>
 					
