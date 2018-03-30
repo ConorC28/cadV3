@@ -1,4 +1,6 @@
 class PatientsController < ApplicationController
+	
+
 	def patientspage								# PatientPage view elements
 		@title = 'Patients';
 		@patientspagecontent1 = 'Patients and the execution of service are the number one focus of the I.M.H. With good service and high quality 
@@ -22,14 +24,21 @@ class PatientsController < ApplicationController
 	end
 	
 	def show										# Show view elements
-		@title = 'New Patient Added';
+		@title = 'Patient details';
 		@patient = Patient.find(params[:id])		# send the user to a page displaying the new patient added		
 	end
 	
 	def create										# Method to create patient
-		@patient = Patient.new(params[:id])  	
-		@patient.save
-		redirect_to @patients_path
+		@patient = Patient.new(patient_params)  	
+		#@patient.save
+		if(@patient.save)
+			redirect_to @patient
+		else
+			render 'new'
+		end
+#render 'patientspage'
+		#redirect_to @patients_path
+		#return
 	end
 		
 	
@@ -43,9 +52,10 @@ class PatientsController < ApplicationController
 	def update										#method to update patient
 		@patient = Patient.find(params[:id])
 		if(@patient.update(patient_params))
+			
 			redirect_to @patient
 		else
-			render 'edit'
+			render 'updated'
 		end
 	end
 	
@@ -55,6 +65,12 @@ class PatientsController < ApplicationController
 		
 		render 'patientspage'		
 		
+	end
+	
+	def updated
+		@patient = Patient.find(params[:id])
+		@title = 'Patient Data Updated'
+	
 	end
 	
 	

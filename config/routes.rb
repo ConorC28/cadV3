@@ -9,13 +9,16 @@ Rails.application.routes.draw do
    
   get 'patientspage' => 'patients#patientspage', as: 'patientspage'
   
-  
+  get 'updated' => 'patients#updated', as: 'updated'
   
   get 'welcome/index'
   
   get 'newpatient' => 'patients#newpatient'
   
-  resources :patients
+  resources :patients do
+	resources :requests
+  end
+	
   
   root 'welcome#index', as: 'home'
   

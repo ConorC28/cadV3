@@ -4,40 +4,82 @@
 		<div class="col-lg-12">
 			
 			<div id = "pdblistshow">
+			
 				</p>
-				<%= link_to "Back to Database", patientdb_path %></li>
-				</p>
-				<%= link_to "Edit", edit_patient_path(@patient)%></li>
-				</p>
+				
 				<%= button_to "Delete", patient_path(@patient),
-								method: :delete,	
-								data: {confirm: 'Are you sure'} 
-								
-								%></li>
+								method: :delete, data: {confirm: "Are you sure?"},	
+								data: {confirm: 'Are you sure'}%>
+				
+				<%= link_to "Back to Database", patientdb_path %></li>
+				
+				<%= link_to "Edit", edit_patient_path(@patient)%></li>
+				
+				
+				
+				</br>
+				</br>					
 					
 			</div>
 					
 			
 			
-			<div id ="shownewp">		
-				<h1><%= @title %></h1>
-				<h3>Patient ID: <%= @patient.id %></h3>
-				<h3>First Name: <%= @patient.firstname %></h3>
-				<h3>Second Name: <%= @patient.secondname %></h3>
-				<h3>Date of Birth: <%= @patient.dateofbirth %></h3>
-				<h3>Address: <%= @patient.address %></h3>
-				<h3>Phone Number: <%= @patient.phonenumber %></h3>
-				<h3>Illness: <%= @patient.illness %></h3>
-				<h3>Relevant Medical Information: <%= @patient.relevantmedicalinfo %></h3>
-				<h3>Next of Kin First Name: <%= @patient.nextofkinfirstname %></h3>
-				<h3>Next of Kin Second Name: <%= @patient.nextofkinsecondname %></h3>
-				<h3>Next of Kin Contact Number: <%= @patient.nextofkincontactnumber %></h3>
-				<h3>Next of Kin Address: <%= @patient.nextofkinaddress %></h3>
-				<h3>Created: <%= @patient.created_at.strftime("%B %d %Y, %l:%M%P") %></h3>
+			<div id ="shownewp">	
+				<div id ="dbinner">
+					<h1><%= @title %></h1>
+					<h3>Patient ID: <%= @patient.id %></h3>
+					<h3>First Name: <%= @patient.firstname %></h3>
+					<h3>Second Name: <%= @patient.secondname %></h3>
+					<h3>Date of Birth: <%= @patient.dateofbirth %></h3>
+					<h3>Address: <%= @patient.address %></h3>
+					<h3>Phone Number: <%= @patient.phonenumber %></h3>
+					<h3>Illness: <%= @patient.illness %></h3>
+					<h3>Relevant Medical Information: <%= @patient.relevantmedicalinfo %></h3>
+					<h3>Next of Kin First Name: <%= @patient.nextofkinfirstname %></h3>
+					<h3>Next of Kin Second Name: <%= @patient.nextofkinsecondname %></h3>
+					<h3>Next of Kin Contact Number: <%= @patient.nextofkincontactnumber %></h3>
+					<h3>Next of Kin Address: <%= @patient.nextofkinaddress %></h3>
+					<h3>Created: <%= @patient.created_at.strftime("%B %d %Y, %l:%M%P") %></h3>
 				
-				
-			<div id ="shownewp">
+				</div>
+			</div>
 			
+			<div id = "nr">
+				<h1>Notes and Requests</h1>
+				<% @patient.requests.each do |request| %>
+					<div class ="well">
+												
+							<p>Note: <%= request.notes %> </p>
+							<p>Request: <%= request.request %></p>	
+							
+					</div>
+				<% end %>
+				
+				<h1>Add a Note and/or Request</h1>
+				<%= form_for([@patient,@patient.requests.build]) do |f|%>
+					
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<p>
+							<%= f.label :Note %>:
+							<%= f.text_field :notes %>
+						</p>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6">
+					
+						<p>
+							<%= f.label :Request %>:
+							<%= f.text_field :request %>
+						</p>
+						
+					</div>
+					
+					<p id = "notebtn">
+						<%= f.submit :'Submit Note and Request' %>
+					</p>				
+										
+				<% end %>
+			</div>
 			
 		</div>
 	</div>

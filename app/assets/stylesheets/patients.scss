@@ -1,6 +1,12 @@
 // Place all the styles related to the Patients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar{
+border-radius:0px;
+}
+.navbar-nav li a.selected, a.selected:visited{
+color:blue;
+}
 #ppimg{
 float:left;
 padding-bottom:15PX;
@@ -76,6 +82,30 @@ text-align:center;
 font-size:18px;
 text-align:center;
 }
+#editbackbtn a{
+text-align:center;
+text-decoration:none;
+font-size:18px;
+padding-bottom:5px;
+padding-top:5px;
+padding-left:5px;
+padding-right:5px;
+box-shadow:0 4px 5px 0 grey;
+border:#004d00;
+border-radius:5px;
+color:white;
+background:#00b33c;
+transition:1s;
+}
+#editbackbtn a:active{
+box-shadow:0 2px 2px 0 grey;
+font-size:18px;
+transition:1s;
+}
+#editbackbtn a:hover{
+font-size:18.5px;
+transition:1s;
+}
 #npfb input{
 box-shadow:0 4px 5px 0 grey;
 border:#004d00;
@@ -111,6 +141,12 @@ background: #CCC;
 #pblist h3:nth-child(odd) {
 background: #FFF;
 }
+#dbinner{
+border-style: inset;
+padding-left:25px;
+padding-right:25px;
+padding-bottom:15px;
+}
 #pdblist a{
 text-align:center;
 text-decoration:none;
@@ -135,19 +171,27 @@ box-shadow:0 2px 2px 0 grey;
 font-size:18px;
 transition:1s;
 }
-#pblist btn{
-text-align:center;
+#pdblistshow input{
+float:right;
 text-decoration:none;
-font-size:18px;
-padding-bottom:5px;
-padding-top:5px;
+transition:1s;
+font-size:16px;
 padding-left:5px;
 padding-right:5px;
 box-shadow:0 4px 5px 0 grey;
 border:#004d00;
 border-radius:5px;
 color:white;
-background:#00b33c;
+background:#ff1a1a;
+transition:1s;
+}
+#pdblistshow input:hover{
+font-size:16.5px;
+transition:1s;
+}
+#pdblistshow input:active{
+box-shadow:0 2px 2px 0 grey;
+font-size:16px;
 transition:1s;
 }
 #pdblistshow a{
@@ -167,10 +211,10 @@ border-radius:5px;
 box-shadow:0 4px 5px 0 grey;
 }
 #pdblistshow a{
+display:inline;
 text-decoration:none;
 transition:1s;
 font-size:16px;
-
 padding-left:5px;
 padding-right:5px;
 box-shadow:0 4px 5px 0 grey;
@@ -186,5 +230,50 @@ transition:1s;
 #pdblistshow a:active{
 box-shadow:0 2px 2px 0 grey;
 font-size:16px;
+transition:1s;
+}
+#nr h1{
+font-size:18px;
+}
+#nr p{
+text-align:center;
+}
+#nr input:nth-child(4){
+text-align:center;
+text-decoration:none;
+font-size:18px;
+padding-bottom:5px;
+padding-top:5px;
+padding-left:5px;
+padding-right:5px;
+box-shadow:0 4px 5px 0 grey;
+border:#004d00;
+border-radius:5px;
+color:white;
+background:#00b33c;
+transition:1s;
+}
+#notebtn input{
+text-align:center;
+text-decoration:none;
+font-size:18px;
+padding-bottom:3px;
+padding-top:3px;
+padding-left:5px;
+padding-right:5px;
+box-shadow:0 4px 5px 0 grey;
+border:#004d00;
+border-radius:5px;
+color:white;
+background:#00b33c;
+transition:1s;
+}
+#notebtn input:hover{
+font-size:18.5px;
+transition:1s;
+}
+notebtn input:active{
+box-shadow:0 2px 2px 0 grey;
+font-size:18px;
 transition:1s;
 }

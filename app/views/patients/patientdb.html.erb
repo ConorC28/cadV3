@@ -8,19 +8,22 @@
 				</div>
 					<div id = "pdblist">
 						<% @patients.each do |patient|%>
+						</br>
 						<%= link_to "View Entry", patient_path(patient) %>
-							<h3>Patient ID: <%= patient.id %></h3>
-							<h3>Patient First Name: <%= patient.firstname %></h3>
-							<h3>Patient Second Name: <%= patient.secondname %></h3>
-							<h3>Patient Date of Birth: <%= patient.dateofbirth %></h3>
-							<h3>Patient Address: <%= patient.address %></h3>
-							<h3>Phone Numbber: <%= patient.phonenumber %></h3>
-							<h3>Illness: <%= patient.illness %></h3>
-							<h3>Relevant Medical Information: <%= patient.relevantmedicalinfo %></h3>
-							<h3>Next of Kin First Name: <%= patient.nextofkinfirstname %></h3>
-							<h3>Next of Kin second Name: <%= patient.nextofkinsecondname %></h3>
-							<h3>Next of Kin Contact Number: <%= patient.nextofkincontactnumber %></h3>
-							<h3>Next of Kin Address: <%= patient.nextofkinaddress %></h3>
+							<div id = "dbinner">
+								<h3>Patient ID: <%= patient.id %></h3>
+								<h3>Patient First Name: <%= patient.firstname %></h3>
+								<h3>Patient Second Name: <%= patient.secondname %></h3>
+								<h3>Patient Date of Birth: <%= patient.dateofbirth %></h3>
+								<h3>Patient Address: <%= patient.address %></h3>
+								<h3>Phone Number: <%= patient.phonenumber %></h3>
+								<h3>Illness: <%= patient.illness %></h3>
+								<h3>Relevant Medical Information: <%= patient.relevantmedicalinfo %></h3>
+								<h3>Next of Kin First Name: <%= patient.nextofkinfirstname %></h3>
+								<h3>Next of Kin second Name: <%= patient.nextofkinsecondname %></h3>
+								<h3>Next of Kin Contact Number: <%= patient.nextofkincontactnumber %></h3>
+								<h3>Next of Kin Address: <%= patient.nextofkinaddress %></h3>
+							</div>
 						<% end %>
 					<div>
 		</div>
