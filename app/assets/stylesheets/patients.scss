@@ -7,6 +7,42 @@ border-radius:0px;
 .navbar-nav li a.selected, a.selected:visited{
 color:blue;
 }
+.navbar li input{
+margin-top:13px;
+margin-left:10px;
+}
+.searchtable table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.searchtable th{
+width:500px;
+text-align:center !important;
+}
+.searchtable td{
+text-align:center !important;
+}
+.navbar input:nth-child(3){
+color:#404c4c;
+background:#abcdce;
+box-shadow:0 4px 5px 0 grey;
+border:#004d00;
+border-radius:5px;
+font-size:16px;
+border-radius:7px;
+transition:1s;
+}
+.navbar input:nth-child(3):hover{
+font-size:16.5px;
+transition:1s;
+border-radius:7px;
+}
+.navbar input:nth-child(3):active{
+box-shadow:0 2px 2px 0 grey;
+font-size:16px;
+transition:1s;
+border-radius:7px;
+}
 #ppimg{
 float:left;
 padding-bottom:15PX;

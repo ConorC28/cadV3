@@ -1,4 +1,5 @@
 class PatientsController < ApplicationController
+	http_basic_authenticate_with name: "Conor", password: "Conlon", accept: [:about]
 	
 
 	def patientspage								# PatientPage view elements
@@ -6,11 +7,15 @@ class PatientsController < ApplicationController
 		@patientspagecontent1 = 'Patients and the execution of service are the number one focus of the I.M.H. With good service and high quality 
 		data analysis we hope to create a healthier future for the people of Ireland. The patients section allows medical practitioners to update
 		data about patients, create new ones, query the database to find information on a patient or remove corrupt data on a patient. You will 
-		need to be signed in if you wish to use any of these features';
-		
-		
-		
+		need to be signed in if you wish to use any of these features';		
+			
 	end
+	
+	def index
+		@title = 'Search Results'
+		@patients = Patient.search(params[:search])
+	end
+	
 	
 	def patientdb									# PatientDB view elements
 		@title = 'Patients Database';

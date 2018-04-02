@@ -12,9 +12,7 @@ class PagesController < ApplicationController
 		their fingers on the pulse of healthcare industry, doctors, physicians, behavioural therapists, phamacists are but a few of the titles held by team
 		members. These teams meet with the head board and discuss findings of medical interests, current standards upcoming events/conferences of interests,
 		research and development, medical data etc. Through this process understandings and ideas are developed in order to create a feasible readplan for 
-		the future of Irish medical and healthcare system.';
-		
-		
+		the future of Irish medical and healthcare system.';		
 		
 	end
 	
@@ -26,5 +24,7 @@ class PagesController < ApplicationController
 		information';
 	
 	end
+	
+	
 	
 end

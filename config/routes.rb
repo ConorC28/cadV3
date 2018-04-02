@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   
   get 'updated' => 'patients#updated', as: 'updated'
   
+  get 'search' => 'patients#index', as: 'search'
+  
   get 'welcome/index'
   
   get 'newpatient' => 'patients#newpatient'
