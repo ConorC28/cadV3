@@ -4,7 +4,7 @@ class Patient < ApplicationRecord
 	def self.search(search)
 		if search
 			where(["firstname || secondname || illness || address ILIKE ?","%#{search}%"])  #	ILIKE to make it case insensitive		
-		else
+		else		#multiple arguments for the search
 			all
 		end
 	end

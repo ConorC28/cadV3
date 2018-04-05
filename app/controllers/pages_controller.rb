@@ -20,8 +20,14 @@ class PagesController < ApplicationController
 		@title = 'What is the I.M.H.';
 		@content = 'The I.M.H. (Irish Medical Hub) was established as part of a new developmental strategy initiated by the H.S.E. (Health Service
 		Executive) and the Irish government. This platform is the first step in the reshaping and redaploying of the Irish medical services, The 
-		purpose of this softwares is to cantralise medical information on the countries population. only medical professionel have access to the 
+		purpose of this softwares is to cantralise medical information on the countries populous. only medical professionel have access to the 
 		information';
+		
+		@content2 = 'The Medical field in Ireland has been booming in R & D while
+		the standards of the services directly availabale to the Irish people has
+		seen some decline. Following an overhaul of the HSEs financial management 
+		and spending patterns; futher expenses have been allocated to development 
+		of this internal software and its evolution in the future.';
 	
 	end
 	
