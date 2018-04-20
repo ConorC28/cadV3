@@ -22,6 +22,7 @@ development:
   username: postgres
   password: secret
   database: db/development
+  
 
 
 # Warning: The database defined as "test" will be erased and
@@ -35,6 +36,7 @@ test:
   username: postgres
   password: secret
   database: db/test
+  
   
 
 production:

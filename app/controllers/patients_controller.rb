@@ -63,7 +63,7 @@ class PatientsController < ApplicationController
 			render 'updated'
 		end
 	end
-	
+													#method to destroy patient
 	def destroy
 		@patient = Patient.find(params[:id])
 		@patient.destroy
@@ -71,7 +71,7 @@ class PatientsController < ApplicationController
 		render 'patientspage'		
 		
 	end
-	
+													
 	def updated
 		@patient = Patient.find(params[:id])
 		@title = 'Patient Data Updated'
